@@ -6,8 +6,12 @@
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
       name="viewport"
     />
-    <title>Ahmet KZ - Ahmet Office</title>
+    <link rel="shortcut icon" href="images/logo-pc.ico" type="image/x-icon" />
+    <link rel="icon" href="images/logo-pc.ico" type="image/x-icon" />
+    <title>Ahmet Office</title>
     <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/fontawsome/fontawsome/css/all.min.css" rel="stylesheet" />
+    <link href="css/animation.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
   </head>
   <body>
@@ -26,24 +30,134 @@
             <a href="#">Басты бет</a>
           </li>
           <li class="mobile-hidden">
-            <a href="#">Тілдер</a>
+            <a href="#language">Тілдер</a>
           </li>
           <li class="mobile-hidden">
-            <a href="#">Форматтар</a>
+            <a href="#formats">Форматтар</a>
           </li>
           <li class="mobile-hidden">
-            <a href="#">Темалар</a>
+            <a href="#subjects">Темалар</a>
           </li>
         </ul>
         <div class="site-lang">
-          <select>
+          <select class="mobile-hidden">
             <option>Қазақша</option>
             <option>Qazaqsha</option>
             <option>قازاقشا</option>
           </select>
+          <div class="mobile-show">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="section-soft">
+        <div class="soft-info slide-in-left">
+          <h1>Ahmet Office</h1>
+          <hr />
+          <p>
+            Ешқандай қосымша бағдарламасыз қазақ әліпбиінде еркін жұмыс істеуге
+            болатын офис бағдарламасы
+          </p>
+          <button>Жүктеу</button>
+        </div>
+        <div class="soft-img">
+          <img
+            class="slide-in-right"
+            src="images/comp.png"
+            alt="Software Ahmet Office"
+          />
+        </div>
+      </section>
+    </main>
+    <section id="language" class="section-multilanguage slide-in-right">
+      <h3 class="section-mltitle">КӨП ТІЛ ЖӘНЕ КӨП ӘЛІПБИ</h3>
+      <div>
+        <div class="text-center">
+          <i class="fa-solid fa-arrow-left section-arrow"></i>
+          <i class="fa-solid fa-arrow-right section-arrow"></i>
+        </div>
+        <br /><br />
+        <div class="section-image">
+          <div>
+            <img src="images/1.png" />
+            <div class="text-center">قازاقشا</div>
+          </div>
+          <div>
+            <img src="images/2.png" />
+            <div class="text-center">ҚАЗАҚША</div>
+          </div>
+          <div>
+            <img src="images/3.png" />
+            <div class="text-center">QAZAQSHA</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="formats" class="section-formats">
+      <div class="mask">
+        <div>
+          <h3>Көп түрлі форматта сақтау</h3>
+        </div>
+        <div class="devide_by_two_part">
+          <div class="lsformats">
+            <i class="fa-regular fa-file-word my_icon"></i>
+            <div class="first">
+              <div class="divtitle">Word құжаты</div>
+              <div class="divdes">
+                Doc, docx құжат форматтарында сақтап, ашумен бірге басқада офис
+                бағдарламаларында дайындалған мәтінді тікелей өңдей аласыз.
+              </div>
+            </div>
+            <i class="fa-regular fa-file-pdf my_icon"></i>
+            <div class="second">
+              <div class="divtitle">PDF құжаты</div>
+              <div class="divdes">
+                PDF форматында сақтау арқылы басқалармен құжат алмасуды немесе
+                басып шығаруды жеңіл жүзеге асырасыз.
+              </div>
+            </div>
+            <i class="fa-solid fa-file-image my_icon"></i>
+            <div class="third">
+              <div class="divtitle">Сурет құжаты</div>
+              <div class="divdes">
+                Құжатты әртүрлі сурет форматында сақтай аласыз, бұл ерекшелік
+                жарнама жасауға, жазбаны сурет күйінде сақтауға мүмкіндік
+                береді.
+              </div>
+            </div>
+          </div>
+          <div class="rsformats">
+            <div class="first">
+              <i class="fa-regular fa-file-code my_icon"></i>
+              <div class="divtitle">HTML құжаты</div>
+              <div class="divdes">
+                Құжатты htm, html форматындағы қарапайым сайт беттеріне
+                айналдырып сақтай аласыз.
+              </div>
+            </div>
+            <div class="second">
+              <i class="fa-solid fa-file-invoice my_icon"></i>
+              <div class="divtitle">RTF пішімі</div>
+              <div class="divdes">
+                RTF пішімінде сақтау арқылы офис бағдарламасы жоқ компьютерде
+                оңдей аласыз.
+              </div>
+            </div>
+            <div class="thrid">
+              <i class="fa-regular fa-file-lines my_icon"></i>
+              <div class="divtitle">Кәдімгі мәтін</div>
+              <div class="divdes">
+                TXT құжаты форматында сақтау арқылы ешқандай пішімі жоқ мәтін
+                ретінде сақтай аласыз
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="subjects" class="section-subjects"></section>
   </body>
 </html>
