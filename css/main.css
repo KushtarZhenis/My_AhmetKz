@@ -197,40 +197,48 @@ select {
 .devide_by_two_part > div {
   width: 30%;
 }
-.devide_by_two_part > .lsformats {
+.devide_by_two_part > div {
   display: grid;
-  grid-template-columns: 1 auto;
+  grid-template-columns: 1fr auto;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
     "my_icon1 first"
     "my_icon2 second"
     "my_icon3 third";
 }
-.devide_by_two_part .my_icon {
-  grid-area: my_icon;
+.devide_by_two_part i {
   color: #fff;
   background-color: var(bg --bg-color);
   font-size: 50px;
   font-weight: 50;
 }
-.lsformats > .first{
-    grid-area: first;
+.devide_by_two_part .my_icon1 {
+  grid-area: my_icon1;
 }
-.lsformats > .second{
-    grid-area: second;
+.devide_by_two_part .my_icon2 {
+  grid-area: my_icon2;
 }
-.lsformats > .third{
-    grid-area: third;
+.devide_by_two_part .my_icon3 {
+  grid-area: my_icon3;
+}
+.devide_by_two_part .first {
+  grid-area: first;
+}
+.devide_by_two_part .second {
+  grid-area: second;
+}
+.devide_by_two_part .third {
+  grid-area: third;
 }
 .devide_by_two_part .divtitle {
   color: #fff;
-  font-size: 30px;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 600;
 }
 .devide_by_two_part .divdes {
   color: #fff;
-  font-size: 18px;
-  font-weight: 30;
+  font-size: 15px;
+  font-weight: 5;
 }
 
 @media screen and (max-width: 600px) {
